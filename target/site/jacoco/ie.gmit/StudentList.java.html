@@ -17,14 +17,15 @@ class StudentList {
     }
 
     Boolean searchStudentInList(String name){
-<span class="pc bpc" id="L20" title="1 of 2 branches missed.">         for (Student s:studentList) {</span>
-<span class="fc" id="L21">            return s.getName().equals(name);</span>
-        }
-<span class="nc" id="L23">        return false;</span>
+<span class="fc" id="L20">        boolean isStudentInList = false;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        for (Student s:studentList) {</span>
+<span class="fc" id="L22">             isStudentInList = s.getName().equals(name);</span>
+<span class="fc" id="L23">        }</span>
+<span class="fc" id="L24">        return isStudentInList;</span>
     }
 
     ArrayList&lt;Student&gt; getStudentList() {
-<span class="fc" id="L27">        return studentList;</span>
+<span class="fc" id="L28">        return studentList;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

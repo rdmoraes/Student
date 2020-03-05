@@ -17,10 +17,11 @@ class StudentList {
     }
 
     Boolean searchStudentInList(String name){
-         for (Student s:studentList) {
-            return s.getName().equals(name);
+        boolean isStudentInList = false;
+        for (Student s:studentList) {
+             isStudentInList = s.getName().equals(name);
         }
-        return false;
+        return isStudentInList;
     }
 
     ArrayList<Student> getStudentList() {
