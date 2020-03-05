@@ -16,9 +16,11 @@ class StudentTest {
     @Test
     void testStudentConstructor(){
         student = new Student("Chris Barry", "cbarry@gmit.ie");
-        assertEquals("Chris Barry", student.getName());
-        assertEquals("cbarry@gmit.ie",student.getEmail());
-
+        //Grouped assertion for student object
+        assertAll("student",
+                () -> assertEquals("Chris Barry", student.getName()),
+                () -> assertEquals("cbarry@gmit.ie",student.getEmail())
+        );
     }
 
     @Test
