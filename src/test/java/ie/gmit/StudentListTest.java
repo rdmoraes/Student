@@ -15,6 +15,7 @@ class StudentListTest {
 
     @BeforeEach
     void init(){
+        // initializes student and student list objects before each test
         studentList = new StudentList();
         student =  new Student("Chris Barry", "cbarry@gmit.ie");
         studentList.addStudentToList(student);
@@ -22,6 +23,7 @@ class StudentListTest {
 
     @Test
     void testGetStudentList(){
+        // hardcode array list of students and asserts with original studentList object
         ArrayList<Student> hardcodeStudentList = new ArrayList<>();
         hardcodeStudentList.add(student);
         assertEquals(hardcodeStudentList, studentList.getStudentList());
@@ -29,10 +31,8 @@ class StudentListTest {
 
     @Test
     void testAddStudentToListMethod(){
-
         student =  new Student("Murray Scott", "mscott@gmit.ie");
         assertTrue(studentList.addStudentToList(student));
-
     }
 
     @Test
@@ -44,8 +44,6 @@ class StudentListTest {
     void testSearchStudentInListFalse(){
         assertFalse(studentList.searchStudentInList("Murray Scott"));
     }
-
-
 
 
 }

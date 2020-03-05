@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StudentList.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">student</a> &gt; <a href="index.source.html" class="el_package">ie.gmit</a> &gt; <span class="el_source">StudentList.java</span></div><h1>StudentList.java</h1><pre class="source lang-java linenums">package ie.gmit;
+/*
+ StudentList class - organizes all students in a list
+
+ Renan Moraes
+ G00353112
+ 21/02/2020
+ */
 
 import java.util.ArrayList;
 
 class StudentList {
 
-   private ArrayList&lt;Student&gt; studentList;
+    private ArrayList&lt;Student&gt; studentList;
 
-<span class="fc" id="L9">    StudentList(){</span>
-<span class="fc" id="L10">        studentList = new ArrayList&lt;&gt;();</span>
-<span class="fc" id="L11">    }</span>
+    /*@brief: Default constructor creates a ArrayList of students*/
+<span class="fc" id="L17">    public StudentList(){</span>
+<span class="fc" id="L18">        studentList = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L19">    }</span>
 
-
+    /*@brief: addStudentToList method
+    * @param: student - Student object
+    * @return: Returns true with student is appended in the list
+    */
     Boolean addStudentToList(Student student){
-<span class="fc" id="L15">        studentList.add(student);</span>
-<span class="fc" id="L16">        return studentList.contains(student);</span>
+<span class="fc" id="L26">        studentList.add(student);</span>
+<span class="fc" id="L27">        return studentList.contains(student);</span>
     }
 
-    Boolean searchStudentInList(String name){
-<span class="fc" id="L20">        boolean isStudentInList = false;</span>
-<span class="fc bfc" id="L21" title="All 2 branches covered.">        for (Student s:studentList) {</span>
-<span class="fc" id="L22">             isStudentInList = s.getName().equals(name);</span>
-<span class="fc" id="L23">        }</span>
-<span class="fc" id="L24">        return isStudentInList;</span>
+    /*@brief: addStudentToList method
+     * @param: name - student's name
+     * @return: Returns true with student is found in the list
+     */
+     Boolean searchStudentInList(String name){
+<span class="fc" id="L35">        boolean isStudentInList = false;</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        for (Student s:studentList) {</span>
+<span class="fc" id="L37">             isStudentInList = s.getName().equals(name);</span>
+<span class="fc" id="L38">        }</span>
+<span class="fc" id="L39">        return isStudentInList;</span>
     }
 
+    /*@brief: getStudentList method
+    * @return: returns array list with all students
+    */
     ArrayList&lt;Student&gt; getStudentList() {
-<span class="fc" id="L28">        return studentList;</span>
+<span class="fc" id="L46">        return studentList;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

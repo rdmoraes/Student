@@ -23,9 +23,13 @@ class StudentTest {
 
     @Test
     void testThrowExceptionConstructor(){
+        //Test empty email
         assertThrows(NullPointerException.class, ()->{ new Student("Renan", "");});
+        //Test null name
         assertThrows(NullPointerException.class, ()->{ new Student(null, "g0012121@gmit.ie");});
+        //Test null name and empty email
         assertThrows(NullPointerException.class, ()->{ new Student(null, "");});
+        //Test  empty name and null email
         assertThrows(NullPointerException.class, ()->{ new Student("", null);});
     }
 

@@ -18,7 +18,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire8296490319032928150\surefirebooter183915495807571063.jar C:\Users\User\AppData\Local\Temp\surefire8296490319032928150 2020-03-05T07-45-49_849-jvmRun1 surefire7096485425712000603tmp surefire_02028490776140756860tmp"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire7358188903852907747\surefirebooter5438838541835049273.jar C:\Users\User\AppData\Local\Temp\surefire7358188903852907747 2020-03-05T08-29-39_926-jvmRun1 surefire680584631002254964tmp surefire_01657962374591568861tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\User\OneDrive - GMIT\SoftwareWithTest\student\target\test-classes;C:\Users\User\OneDrive - GMIT\SoftwareWithTest\student\target\classes;C:\Users\User\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\User\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\User\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\User"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire8296490319032928150\surefirebooter183915495807571063.jar;C:\\Users\\User\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire7358188903852907747\surefirebooter5438838541835049273.jar;C:\\Users\\User\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,6 +61,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testStudentConstructor" classname="ie.gmit.StudentTest" time="0.001"/>
-  <testcase name="testThrowExceptionConstructor" classname="ie.gmit.StudentTest" time="0.006"/>
+  <testcase name="testStudentConstructor" classname="ie.gmit.StudentTest" time="0.002"/>
+  <testcase name="testThrowExceptionConstructor" classname="ie.gmit.StudentTest" time="0.005"/>
 </testsuite>
